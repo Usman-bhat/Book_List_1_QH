@@ -6,6 +6,7 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,7 +21,7 @@ import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
-    private ArrayList<Model> data;
+    private static List<Model> data;
     Activity activity;
 
     public MyAdapter(Activity activity,ArrayList<Model> data) {
@@ -91,6 +92,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
             this.bookauthore = itemView.findViewById(R.id.authore);
         }
     }
+//for seaching in recview
+public void filterList(ArrayList<Model> filteredList) {
+    data = filteredList;
+    notifyDataSetChanged();
+}
 }
 
 

@@ -18,8 +18,7 @@ import java.io.OutputStream;
 import java.util.ArrayList;
 
 
-public class DatabaseHelper
-        extends SQLiteOpenHelper {
+public class DatabaseHelper extends SQLiteOpenHelper {
 
     // The Android's default system path
     // of your application database.
@@ -195,6 +194,7 @@ public class DatabaseHelper
         Cursor cursor=db.rawQuery(qry,null);
         return  cursor;
     }
+
 
 }
 

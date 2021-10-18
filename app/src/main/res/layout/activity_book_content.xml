@@ -29,7 +29,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:text="01"
+                    android:text="01 . Titleof book content"
                     android:textColor="#000000"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -49,7 +49,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Book Name"
+                    android:text="Book Content goes here This content is very big."
                     android:textColor="#000000"
                     android:textSize="20sp"
                     android:textStyle="bold" />
